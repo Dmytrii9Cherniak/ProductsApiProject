@@ -1,0 +1,24 @@
+<div class="login">
+  <div class="login-box">
+    <h2>Login</h2>
+    <form [formGroup]="form">
+      <div class="user-box">
+        <input type="text" formControlName="usernameLoginValue">
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password" formControlName="passwordFieldValue">
+        <label>Password</label>
+      </div>
+      <div class="button">
+        <div>
+          <a (click)="login()"> Login </a>
+        </div>
+        <div class="user-box-3">
+          <label>Remember me</label>
+          <input type="checkbox" formControlName="rememberMe">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
